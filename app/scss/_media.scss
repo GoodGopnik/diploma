@@ -1,0 +1,30 @@
+@media (max-width: 545px) {
+    .block-contact {
+        flex-direction: column;
+        padding: 20px 20px;
+    }
+    .block-contact {
+        svg {
+            display: none;
+        }
+    }
+    .block-contact-text-1 {
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .block-contact-text-2 {
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 420px) {
+    .block-contact-text-1 {
+        flex-direction: column;
+    }
+    .block-contact-text-1 {
+        img {
+            display: none;
+        }
+    }
+}

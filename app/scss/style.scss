@@ -1,0 +1,85 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+header {
+    max-width: 1920px;
+    background: $black-color;
+}
+.block-contact {
+    max-width: 1110px;
+    display: flex;
+    justify-content: space-between;
+    background: $black-color;
+}
+.block-contact {
+    .block-contact-text-1 {
+        max-width: 400px;
+        display: flex;
+        justify-content: space-between;
+        font-family: $PT-SANS;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color: $gray-color;
+        align-items: center;
+        padding: 0;
+        
+    }
+    a {
+        text-decoration: none;
+        color: $gray-color;
+    }
+    li {
+        list-style: none;
+        margin-right: 8px;
+    }
+}
+.block-contact-text-2 {
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    font-family: $PT-SANS;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: $gray-color;
+    align-items: center;
+    padding: 0;
+    a {
+        text-decoration: none;
+        color: $gray-color;
+    }
+    li {
+        list-style: none;
+        margin-right: 8px;
+    }
+    .vector-right {
+        margin-right: -9px;
+        margin-bottom: 3px;
+    }
+}
+@import "media";
+// $PT-SANS: 'PT Sans', sans-serif;
+// $black-color: #000;
+// $gray-color: #969696;
+// $black2-color: #0F0F0F;
+// $black3-color: #1F1F1F;
+// $wiht-color: #fff;
+// $black4-color: #191B1C;
