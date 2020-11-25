@@ -74,7 +74,7 @@ header {
         margin-bottom: 3px;
     }
 }
-// Header top 
+////////////////////////////// Header top 
 .header-top {
     max-width: 1920px;
     background: $black2-color;
@@ -116,6 +116,69 @@ header {
         color: $wiht-color;
     }
 }
+////////////////////////////// greeting 
+.greeting-block {
+    padding-top: 160px;
+    max-width: 1920px;
+    height: 810px;
+    background: url(../img/greeting/Rectangle.jpg)center/cover no-repeat;
+}
+.greeting-logo-block {
+    border: 5px solid white;
+    max-width: 320px;
+    height: 320px;
+    margin: 0 auto;
+} 
+.greeting-logo-block {
+    h1 {
+        font-size: 64px;
+        font-family: 'Post No Bills Jaffna';
+        font-weight: normal;
+        line-height: 96px;
+        color: $wiht-color;
+        text-align: center;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        padding-top: 93px;
+    }
+    h1::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 190px;
+        height: 2px;
+        background: $wiht-color;
+        margin: 0 auto;
+        top: 170px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    p {
+        font-size: 22px;
+        font-family: $PT-SANS;
+        line-height: 29px;
+        font-weight: 400;
+        text-align: center;
+        color: $wiht-color;
+        margin: 0;
+    }
+}
+.greeting-lorem-block {
+    max-width: 730px;
+    margin: 0 auto;
+    margin-top: 80px;
+    text-align: center;
+}
+.greeting-lorem-block {
+    p {
+        font-family: $PT-SANS;
+        font-size: 16px;
+        line-height: 24px;
+        color: $wiht-color;
+    }
+}
+
 @import "media";
 // $PT-SANS: 'PT Sans', sans-serif;
 // $black-color: #000;
