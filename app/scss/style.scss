@@ -178,7 +178,38 @@ header {
         color: $wiht-color;
     }
 }
-
+////////////////////////////// season
+.season-block {
+    max-width: 1920px;
+    background: $black-color;
+    color: $wiht-color;
+}
+.season-block {
+    h2 {
+        padding: 0;
+        margin: 0;
+    }
+}
+.season-absolute-block {
+    display: flex;
+    justify-content: space-between;
+}
+.season-img {
+    max-width: 1040px;
+}
+.season-img-absolute {
+    display: flex;
+    justify-content: space-between;
+}
+.new-collection {
+    background: url(../img/season/Rectangle8.jpg);
+    min-height: 730px;
+    max-width: 880px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    color: $wiht-color;
+}
 @import "media";
 // $PT-SANS: 'PT Sans', sans-serif;
 // $black-color: #000;
