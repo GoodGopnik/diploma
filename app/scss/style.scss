@@ -38,8 +38,7 @@ header {
         line-height: 16px;
         color: $gray-color;
         align-items: center;
-        padding: 0;
-        
+        padding: 0;        
     }
     a {
         text-decoration: none;
@@ -75,6 +74,8 @@ header {
         margin-bottom: 3px;
     }
 }
+// Header top 
+
 @import "media";
 // $PT-SANS: 'PT Sans', sans-serif;
 // $black-color: #000;
