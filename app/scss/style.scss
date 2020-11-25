@@ -75,7 +75,47 @@ header {
     }
 }
 // Header top 
-
+.header-top {
+    max-width: 1920px;
+    background: $black2-color;
+    color: #969696;
+}
+.header-top-block {
+    display: flex;
+    justify-content: space-between;
+}
+.header-top-block {
+    .Logo-header {
+        font-weight: 700;
+        font-family: 'Post No Bills Jaffna';
+        font-size: 38px;
+        line-height: 54px;
+        color: $wiht-color;
+        display: flex;
+        align-items: center;
+    }
+    h2 {
+        padding: 0;
+        margin: 0;
+    }
+    .nav-header {
+        display: flex;
+        align-items: center;
+    }
+    a {
+        font-size: 14px;
+        line-height: 18px;
+        color: $gray-color;
+        font-family: $PT-SANS;
+        font-weight: 400;
+        padding: 30px 20px;
+        text-decoration: none;
+    }
+    a:hover {
+        background: $black3-color;
+        color: $wiht-color;
+    }
+}
 @import "media";
 // $PT-SANS: 'PT Sans', sans-serif;
 // $black-color: #000;

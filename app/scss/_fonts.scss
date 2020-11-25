@@ -6,3 +6,10 @@ $black2-color: #0F0F0F;
 $black3-color: #1F1F1F;
 $wiht-color: #fff;
 $black4-color: #191B1C;
+@font-face {
+    font-family: 'Post No Bills Jaffna';
+    src: url('../fonts/PostNoBillsJaffna-Bold.woff2') format('woff2'),
+         url('../fonts/PostNoBillsJaffna-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
