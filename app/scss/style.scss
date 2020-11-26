@@ -406,6 +406,50 @@ header {
         }
     }
 }
+////////////////////////////// brand
+.brand {
+    max-width: 1920px;
+    background: $black2-color;
+    padding-bottom: 75px;
+    .img-brand {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    h2 {
+        font-family: $Playfair-Display;
+        font-size: 36px;
+        font-weight: 700;
+        color: $wiht-color;
+        line-height: 48px;
+        padding: 0;
+        margin: 0;
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 80px;
+        position: relative;
+    }
+    h2::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 120px;
+        height: 2px;
+        background: $wiht-color;
+        margin: 0 auto;
+        top: 160px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    img {
+        margin: 0 auto;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
 
 @import "media";
 // $PT-SANS: 'PT Sans', sans-serif;
