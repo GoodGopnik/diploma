@@ -554,8 +554,22 @@ header {
             }
     }        
 }
-
-
+////////////////////////////// my
+.mail {
+    max-width: 1920px;
+    background: $black-color;
+    .main-about {
+        display: flex;
+        justify-content: space-between;
+        p {
+            font-family: $PT-SANS;
+            color: $wiht-color;
+        }
+    }
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: rgba(255, 255, 255, 0.7);
+}
 @import "media";
 // $PT-SANS: 'PT Sans', sans-serif;
 // $black-color: #000;
