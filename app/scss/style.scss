@@ -114,6 +114,7 @@ header {
     a:hover {
         background: $black3-color;
         color: $wiht-color;
+        transition: 0.9s;
     }
 }
 ////////////////////////////// greeting 
@@ -184,31 +185,101 @@ header {
     background: $black-color;
     color: $wiht-color;
 }
-.season-block {
-    h2 {
-        padding: 0;
-        margin: 0;
-    }
-}
 .season-absolute-block {
     display: flex;
     justify-content: space-between;
 }
 .season-img {
     max-width: 1040px;
+    width: 100%;
+    h2 {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: $Playfair-Display;
+        font-size: 36px;
+        line-height: 48px;
+        padding-top: 93px;
+        padding-bottom: 100px;
+        font-weight: 700;
+        position: relative;
+        color: $wiht-color;
+    }
+    h2::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 120px;
+        height: 2px;
+        background: $wiht-color;
+        margin: 0 auto;
+        top: 185px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 .season-img-absolute {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    img {
+        padding: 55px 22px;
+        background: $black4-color;
+    }
+    p {
+        font-family: $Playfair-Display;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        color: $wiht-color;
+    }
 }
 .new-collection {
-    background: url(../img/season/Rectangle8.jpg);
+    background: url(../img/season/Rectangle8.jpg)center;
     min-height: 730px;
     max-width: 880px;
     width: 100%;
-    height: 100%;
-    border: 1px solid red;
     color: $wiht-color;
+    text-align: center;
+    h2 {
+        font-family: $Playfair-Display;
+        font-size: 36px;
+        line-height: 48px;
+        color: $wiht-color;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 485px;
+        margin-bottom: 65px;
+        position: relative;
+    }
+    h2::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 120px;
+        height: 2px;
+        background: $wiht-color;
+        margin: 0 auto;
+        top: 65px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    a {
+        font-family: $PT-SANS;
+        font-size: 18px;
+        color: $wiht-color;
+        line-height: 24px;
+        font-weight: 400;
+        text-transform: uppercase;
+        border: 2px solid white;
+        padding: 10px 30px;
+        text-decoration: none;
+    }
+    a:hover {
+        background: $gray-color;
+        transition: 0.9s;
+    }
 }
 @import "media";
 // $PT-SANS: 'PT Sans', sans-serif;
