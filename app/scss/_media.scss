@@ -19,6 +19,18 @@
         }
     }
 }
+@media (max-width: 1050px) {
+    .contact {
+        background: $black4-color;
+    }
+    .contact-absolute {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: $black4-color;
+        text-align: center;
+    }
+}
 @media (max-width: 850px) {
     .season-img-absolute {
         display: flex;
@@ -99,6 +111,14 @@
     .block-contact-text-1 {
         img {
             display: none;
+        }
+    }
+    .mailling-bt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        a {
+            margin-top: 20px;
         }
     }
 }
