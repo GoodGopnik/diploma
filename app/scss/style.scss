@@ -222,8 +222,14 @@ header {
 .season-img-absolute {
     display: flex;
     justify-content: space-around;
+    max-width: 1040px;
+    .season-img-block-1 {
+        margin: 20px;
+    }
     img {
         padding: 55px 22px;
+        width: 260px;
+        height: 325px;
         background: $black4-color;
     }
     p {
