@@ -4,6 +4,20 @@
         flex-direction: column;
         align-items: center;
     }
+    .apsolute-collection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .img-collection {
+            text-align: center;
+        }
+        h2 {
+            margin-top: 50px;
+        }
+        a {
+            padding-bottom: 10px;
+        }
+    }
 }
 @media (max-width: 850px) {
     .season-img-absolute {
@@ -59,6 +73,22 @@
     .block-contact-text-1 {
         img {
             display: none;
+        }
+    }
+}
+@media (max-width: 350px) {
+    .new-collection {
+        h2::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 120px;
+            height: 2px;
+            background: $wiht-color;
+            margin: 0 auto;
+            top: 120px;
+            left: 50%;
+            transform: translateX(-50%);
         }
     }
 }
