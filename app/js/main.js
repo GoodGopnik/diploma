@@ -51,6 +51,8 @@ async function dataAdd () {
     let newElem = document.createElement ('div')
         
     newElem.innerHTML = `
+        <a data-fancybox="gallery" href="/img/season/620501.png">
+        <img src="./img/season/620501.png" alt="" id="img1"></a>
         <p>${resault[key].title}</p>
         <p>${resault[key].id}</p>
         `
@@ -62,6 +64,8 @@ async function dataAdd () {
         let newElem = document.createElement ('div')
             
         newElem.innerHTML = `
+            <a data-fancybox="gallery" href="/img/season/620501.png">
+            <img src="./img/season/620501.png" alt="" id="img1"></a>
             <p>${resault[key].title}</p>
             <p>${resault[key].id}</p>
             `
@@ -73,6 +77,8 @@ async function dataAdd () {
             let newElem = document.createElement ('div')
                 
             newElem.innerHTML = `
+                <a data-fancybox="gallery" href="/img/season/620501.png">
+                <img src="./img/season/620501.png" alt="" id="img1"></a>
                 <p>${resault[key].title}</p>
                 <p>${resault[key].id}</p>
                 `
