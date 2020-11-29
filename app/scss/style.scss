@@ -576,6 +576,9 @@ header {
 ::-webkit-input-placeholder { /* WebKit browsers */
     color: rgba(255, 255, 255, 0.7);
 }
+.elastic li.hide {
+    display: none;
+}
 @import "media";
 // $PT-SANS: 'PT Sans', sans-serif;
 // $black-color: #000;
