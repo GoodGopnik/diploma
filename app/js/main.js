@@ -4,36 +4,6 @@
 
   
 // });
-// document.querySelector('#elastic').oninput = function () {
-//     let val = this.value.trim();
-//     let elasticItems = document.querySelectorAll('.img-Admission p');
-//     if (val != '') {
-//         elasticItems.forEach(function (elem) {
-//             if (elem.innerText.search(val) == -1) {
-//                 elem.classList.add('hide');
-//                 elem.innerHTML = elem.innerText;
-//             }
-//             else {
-//                 elem.classList.remove('hide');
-//                 let str = elem.innerText;
-//                 elem.innerHTML = insertMark(str, elem.innerText.search(val), val.length);
-//             }
-//         });
-//     }
-//     else {
-//         elasticItems.forEach(function (elem) {
-//             elem.classList.remove('hide');
-//             elem.innerHTML = elem.innerText;
-//         });
-//     }
-// }
-
-// function insertMark(string, pos, len) {
-//     // hello world
-//     // hello <mark>wo</mark>rld
-//     // hello+<mark>+wo+</mark>+rld
-//     return string.slice(0, pos) + '<mark>' + string.slice(pos, pos + len) + '</mark>' + string.slice(pos + len);
-// }
 async function dataAdd () {
     const url = `http://127.0.0.1:3005/new` //Получаем имя сервера
     const response = await fetch(url) //Вызываем асинхронний заспрос
@@ -54,100 +24,100 @@ async function dataAdd () {
     const text14 = document.getElementById ('text14')
     const button = document.getElementById ('button')
 
-    let key //создание переменной для цикла
-    for(key in resault) {  //создали цикл и вставили туда объект по чьим свойствам мы пройдемся. Сам цикл for..in
-
+    const key = []
+    const key1 = []
+    for (let i = 0; i < resault.length; i++) {
+    if (resault[i].id === "1") {
+        key.push(resault[i].title) 
+    }
+}
+    for (let i = 0; i < resault.length; i++) {
+        if (resault[i].id === "1") {
+            key1.push(resault[i].budget)
+        }
+    }
     let newElem = document.createElement ('div')
-        
     newElem.innerHTML = `
         <a data-fancybox="gallery" href="/img/season/620501.png">
         <img src="./img/season/620501.png" alt="" id="img1"></a>
-        <p>${resault[key].title}</p>
-        <p>${resault[key].id}</p>
+        <p>${key}</p>
+        <p>${key1}</p>
         `
         text1.insertAdjacentElement('afterend', newElem)
         text2.insertAdjacentElement('afterend', newElem)
-    }  
-    for(key in resault) {  //создали цикл и вставили туда объект по чьим свойствам мы пройдемся. Сам цикл for..in
-
-        let newElem = document.createElement ('div')
-            
+     
+     {  
+        let newElem = document.createElement ('div')    
         newElem.innerHTML = `
-            <a data-fancybox="gallery" href="/img/season/620501.png">
-            <img src="./img/season/620501.png" alt="" id="img1"></a>
-            <p>${resault[key].title}</p>
-            <p>${resault[key].id}</p>
+        <a data-fancybox="gallery" href="/img/season/620501.png">
+        <img src="./img/season/620501.png" alt="" id="img1"></a>
+        <p>${key}</p>
+        <p>${key1}</p>
             `
-            text3.insertAdjacentElement('afterend', newElem)
-            text4.insertAdjacentElement('afterend', newElem)
+        text3.insertAdjacentElement('afterend', newElem)
+        text4.insertAdjacentElement('afterend', newElem)
         }  
-        for(key in resault) {  //создали цикл и вставили туда объект по чьим свойствам мы пройдемся. Сам цикл for..in
-
-            let newElem = document.createElement ('div')
+        {  
+        let newElem = document.createElement ('div')
                 
-            newElem.innerHTML = `
-                <a data-fancybox="gallery" href="/img/season/620501.png">
-                <img src="./img/season/620501.png" alt="" id="img1"></a>
-                <p>${resault[key].title}</p>
-                <p>${resault[key].id}</p>
-                `
-                text5.insertAdjacentElement('afterend', newElem)
-                text6.insertAdjacentElement('afterend', newElem)
+        newElem.innerHTML = `
+        <a data-fancybox="gallery" href="/img/season/620501.png">
+        <img src="./img/season/620501.png" alt="" id="img1"></a>
+        <p>${key}</p>
+        <p>${key1}</p>
+            `
+        text5.insertAdjacentElement('afterend', newElem)
+        text6.insertAdjacentElement('afterend', newElem)
             }  
     button.onclick = function () {
-        for(key in resault) {  //создали цикл и вставили туда объект по чьим свойствам мы пройдемся. Сам цикл for..in
-
-            let newElem = document.createElement ('div')
+        {  
+        let newElem = document.createElement ('div')
                 
-            newElem.innerHTML = `
-                <a data-fancybox="gallery" href="/img/season/620501.png">
-                <img src="./img/season/620501.png" alt="" id="img1"></a>
-                <p>${resault[key].title}</p>
-                <p>${resault[key].id}</p>
-                `
-                text7.insertAdjacentElement('afterend', newElem)
-                text8.insertAdjacentElement('afterend', newElem)
+        newElem.innerHTML = `
+        <a data-fancybox="gallery" href="/img/season/620501.png">
+        <img src="./img/season/620501.png" alt="" id="img1"></a>
+        <p>${key}</p>
+        <p>${key1}</p>
+            `
+        text7.insertAdjacentElement('afterend', newElem)
+        text8.insertAdjacentElement('afterend', newElem)
             }  
-            for(key in resault) {  //создали цикл и вставили туда объект по чьим свойствам мы пройдемся. Сам цикл for..in
-
-                let newElem = document.createElement ('div')
+            {  
+        let newElem = document.createElement ('div')
                     
-                newElem.innerHTML = `
-                    <a data-fancybox="gallery" href="/img/season/620501.png">
-                    <img src="./img/season/620501.png" alt="" id="img1"></a>
-                    <p>${resault[key].title}</p>
-                    <p>${resault[key].id}</p>
-                    `
-                    text9.insertAdjacentElement('afterend', newElem)
-                    text10.insertAdjacentElement('afterend', newElem)
+        newElem.innerHTML = `
+        <a data-fancybox="gallery" href="/img/season/620501.png">
+        <img src="./img/season/620501.png" alt="" id="img1"></a>
+        <p>${key}</p>
+        <p>${key1}</p>
+            `
+        text9.insertAdjacentElement('afterend', newElem)
+        text10.insertAdjacentElement('afterend', newElem)
                 } 
-                for(key in resault) {  //создали цикл и вставили туда объект по чьим свойствам мы пройдемся. Сам цикл for..in
+                {  
 
-                    let newElem = document.createElement ('div')
+        let newElem = document.createElement ('div')
                         
-                    newElem.innerHTML = `
-                        <a data-fancybox="gallery" href="/img/season/620501.png">
-                        <img src="./img/season/620501.png" alt="" id="img1"></a>
-                        <p>${resault[key].title}</p>
-                        <p>${resault[key].id}</p>
-                        `
-                        text11.insertAdjacentElement('afterend', newElem)
-                        text12.insertAdjacentElement('afterend', newElem)
+        newElem.innerHTML = `
+        <a data-fancybox="gallery" href="/img/season/620501.png">
+        <img src="./img/season/620501.png" alt="" id="img1"></a>
+        <p>${key}</p>
+        <p>${key1}</p>
+            `
+        text11.insertAdjacentElement('afterend', newElem)
+        text12.insertAdjacentElement('afterend', newElem)
                     } 
-                    for(key in resault) {  //создали цикл и вставили туда объект по чьим свойствам мы пройдемся. Сам цикл for..in
-
-                        let newElem = document.createElement ('div')
-                            
-                        newElem.innerHTML = `
-                            <a data-fancybox="gallery" href="/img/season/620501.png">
-                            <img src="./img/season/620501.png" alt="" id="img1"></a>
-                            <p>${resault[key].title}</p>
-                            <p>${resault[key].id}</p>
-                            `
-                            text13.insertAdjacentElement('afterend', newElem)
-                            text14.insertAdjacentElement('afterend', newElem)
+                    {  
+        let newElem = document.createElement ('div')      
+        newElem.innerHTML = `
+        <a data-fancybox="gallery" href="/img/season/620501.png">
+        <img src="./img/season/620501.png" alt="" id="img1"></a>
+        <p>${key}</p>
+        <p>${key1}</p>
+            `
+        text13.insertAdjacentElement('afterend', newElem)
+        text14.insertAdjacentElement('afterend', newElem)
                         } 
     }
-
 }      
 dataAdd() 
